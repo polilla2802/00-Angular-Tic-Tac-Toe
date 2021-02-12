@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "logic-shell": {
+    "tic-tac-toe": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/logic-shell",
+            "outputPath": "dist/tic-tac-toe",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "logic-shell:build"
+            "browserTarget": "tic-tac-toe:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "logic-shell:build:production"
+              "browserTarget": "tic-tac-toe:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "logic-shell:build"
+            "browserTarget": "tic-tac-toe:build"
           }
         },
         "test": {
@@ -115,16 +115,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "logic-shell:serve"
+            "devServerTarget": "tic-tac-toe:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "logic-shell:serve:production"
+              "devServerTarget": "tic-tac-toe:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "logic-shell"
+  "defaultProject": "tic-tac-toe"
 }
