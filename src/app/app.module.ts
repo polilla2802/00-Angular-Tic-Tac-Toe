@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
-import { MatSliderModule } from '@angular/material/slider';
 import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './board/board.component';
 
@@ -14,7 +13,7 @@ import { BoardComponent } from './board/board.component';
   ],
   imports: [
     BrowserModule,
-    MatSliderModule
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
