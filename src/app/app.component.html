@@ -9,8 +9,11 @@
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <img alt="Angular Logo" src="./assets/logic-logo.png" />
-  <span>Tic Tac Toe</span>
+  <div class="card highlight-card card-small">
+    <img class="logo-banner" alt="Angular Logo" src="./assets/logic-logo.png" /> 
+
+    <span>{{ title }}</span>
+  </div>
   <a
     aria-label="Github"
     target="_blank"
@@ -24,11 +27,6 @@
 
 <div class="content" role="main">
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
-    <img class="logo-banner" alt="Angular Logo" src="./assets/logic-logo.png" /> 
-
-    <span>{{ title }} app is running!</span>
-  </div>
 
   <!-- <app-square [value]="'O'"></app-square> -->
   <app-board></app-board>
