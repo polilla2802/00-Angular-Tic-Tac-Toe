@@ -33,3 +33,5 @@ console.log("binary res: " + binary);
 
 var jump = JumpSearch(myArray, x, N);
 console.log("jump res: " + binary);
+
+//test
